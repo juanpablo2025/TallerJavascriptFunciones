@@ -50,7 +50,7 @@ numerospares()
 resta, multiplicación y división). Presentar el ejercicio como
 un menú de opciones que se repita de forma indefinida, y cada
 operación debe ser una función separada
-*/
+
 function calculadora(opcion){
 
 	var opcion = parseInt(prompt("1 2 3 o 4"))
@@ -107,8 +107,30 @@ pedir de forma independiente con una función, y debe existir
 una función adicional que muestre el mensaje con los datos
 ingresados*/
 
+function pedirdatos(){
 
+	
 
+	function nombre(nombre){
+		var nombre = prompt("Nombre")
+		return nombre
+		
+	}
+	function apellido(apellido){
+		var apellido = prompt("Apellido")
+		return apellido
+	}
+	function edad(edad){
+		var edad = parseInt(prompt("Edad"))
+		return edad
+	}
+	function cargo(cargo){
+		var cargo = prompt("Cargo")
+		return cargo
+	}
+	alert(nombre()+"\n"+apellido()+"\n"+edad()+"\n"+cargo())
+}
+pedirdatos()
 
 /*• Realizar una función que muestre la tabla de multiplicar de un
 numero ingresado. La tabla de multiplicar se debe mostrar en
