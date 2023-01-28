@@ -21,7 +21,7 @@ alert("Salario: "+salariototal())
 
 /*• Realizar un algoritmo que muestre por consola los números pares
 desde n hasta m. Realizarlo usando funciones y ambos valores
-son ingresados por teclado*/
+son ingresados por teclado
 
 function numerospares(){
 	var n = parseInt(prompt("Desde"))
@@ -51,7 +51,51 @@ resta, multiplicación y división). Presentar el ejercicio como
 un menú de opciones que se repita de forma indefinida, y cada
 operación debe ser una función separada
 */
+function calculadora(opcion){
 
+	var opcion = parseInt(prompt("1 2 3 o 4"))
+
+	function suma(x,y){
+		var x = parseInt(prompt("Numero 1"))
+		var y = parseInt(prompt("Numero 2"))
+		return x+y
+	}
+	function resta(x,y){
+		var x = parseInt(prompt("Numero 1"))
+		var y = parseInt(prompt("Numero 2"))
+		return x-y
+	}
+	function multiplicacion(x,y){
+		var x = parseInt(prompt("Numero 1"))
+		var y = parseInt(prompt("Numero 2"))
+		return x*y
+	}
+	function divicion(x,y){
+		var x = parseInt(prompt("Numero 1"))
+		var y = parseInt(prompt("Numero 2"))
+		return x/y
+	}
+
+	if(opcion==1){
+		
+	alert(suma())
+	calculadora()
+	}
+	if(opcion==2){
+
+      alert(resta())
+	calculadora()
+	}
+	if(opcion==3){
+	alert(multiplicacion())
+	calculadora()
+	}
+	if(opcion==4){
+	alert(divicion())
+	calculadora()}
+
+	}
+calculadora()
 
 
 /*• Realizar un algoritmo que pida el nombre de una persona, el
