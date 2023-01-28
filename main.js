@@ -105,7 +105,7 @@ apellido, la edad y el cargo, para luego mostrar en un mensaje
 completo dichos campos. Tenga en cuenta que cada valor se debe
 pedir de forma independiente con una función, y debe existir
 una función adicional que muestre el mensaje con los datos
-ingresados*/
+ingresados
 
 function pedirdatos(){
 
@@ -140,7 +140,17 @@ o 2 x 3 = 6
 o 2 x 4 = 8
 o 2 x 5 = 10*/
 
+function tablas(){
 
+	
+	var numero = parseInt(prompt("numero"))
+	
+	for(var i=0;i<=10;i++){
+    	console.log("o "+numero+" x "+i+" = "+ (i* numero))
+	}
+
+}
+tablas()
 
 
 /*• Realizar un algoritmo que permita ingresar una base y una
