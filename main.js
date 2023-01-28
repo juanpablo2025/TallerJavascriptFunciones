@@ -94,7 +94,9 @@ function calculadora(opcion){
 	alert(divicion())
 	calculadora()}
 
-	}
+	if(opcion==0){
+	alert("Saliendo")	
+	}}
 calculadora()
 
 
