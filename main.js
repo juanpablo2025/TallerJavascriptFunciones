@@ -138,7 +138,7 @@ el formado tradicional:
 o 2 x 2 = 4
 o 2 x 3 = 6
 o 2 x 4 = 8
-o 2 x 5 = 10*/
+o 2 x 5 = 10
 
 function tablas(){
 
@@ -158,3 +158,88 @@ altura, y seleccionar de un menú de opciones si se desea
 calcular el área, perímetro o área y perímetro de un cuadrado,
 triangulo o rectángulo. Realizar este ejercicio haciendo uso
 de funciones*/
+
+function calculadora(){
+	
+	
+
+
+	function figura(figura){
+	var figura = parseInt(prompt("Digita:"+"\n"+"1)Triangulo"+"\n"+"2)Cuadrado"+"\n"+"3)Rectangulo "+"\n"+ "4) Salir"))
+	return figura
+	}
+
+	function opcion(opcion){
+	
+	var opcion = parseInt(prompt("Digita:"+"\n"+"1) Calcular area"+"\n"+"2) Calcular perimetro"+"\n"+"3) Calcular area y perimetro "+"\n"+ "4) Salir"))
+	
+	return opcion
+	
+	}
+
+	alert(figura())
+	alert(opcion())
+	
+	var x = parseInt(prompt("Digita la base"))
+	var y = parseInt(prompt("Digita la altura"))
+
+	if(opcion()==1&&figura()==1){
+		
+		alert(x*y/2)
+		calculadora()
+		}
+		if(opcion()==2&&figura()==1){
+	
+		alert(x*2+y)
+		calculadora()
+		
+		}
+		if(opcion()==3&&figura()==1){
+			alert(x*y/2)
+			   alert(x*2+y)
+		calculadora()	   
+		
+		}
+		if(opcion()==1&&figura()==2){
+			
+		alert(x*y)
+		calculadora()
+		
+		}
+		if(opcion()==2&&figura()==2){
+	
+		alert(x*4)
+		calculadora()
+		
+		}
+		if(opcion()==3&&figura()==2){
+			alert(x*y)
+			alert(x*4)
+			calculadora()
+		
+		}if(opcion()==1&&figura()==3){
+			
+		alert(x*y)
+		calculadora()
+		
+		}
+		if(opcion()==2&&figura()==3){
+	
+		alert(x*2+y*2)
+		calculadora()
+		
+		}
+		if(opcion()==3&&figura()==3){
+			alert("a"+(x*y)+"b"+(x*2+y*2))
+			
+			calculadora()
+		
+		}
+		
+	
+		if(opcion()==4){
+		alert("Saliendo")	
+		}
+}
+
+calculadora()
